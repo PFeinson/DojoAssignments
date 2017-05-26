@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+        <script type = "text/javascript">
+            $(document).ready(function() {
+                function Types(data) {
+                    var str = "";
+                    for (var i = 0; i < data.types.length; ++i) {
+                        str += ("<li>" + data.types[i].name + "</li>");
+                    }
+                    return str;
+                }
+            
+            
+                function attachHandler(id) {
+                     $(id).on("click", function() {
+                        if( $("#pokedex").children().is(":visible") ){
+                            $("#pokedex").children().hide();
+                        }
+                        console.log($("#pokedex").children());
+                        $.get("http://pokeapi.co/api/v1/pokemon/" + id.substring(1, id.length) + "/", function(data) {
+                            $("#pokedex").append("<div id = '" + id + "Pokedex'><p class = \"name\">" + data.name + "</p><p><img src = \"http://pokeapi.co/media/img/" + id.substring(1, id.length) + 
+                            ".png\"/></p><p><h3>Types</h3></p><div class = \"types\">" + Types(data) + "</div><p><h3>Height:</h3></p><p class = \"height\">" + data.height + "</p><p><h3>Weight:</h3></p><p class = \"weight\">" + data.weight + "</p></div>");
+                        }, "json");
+                    });
+                }
+                var id = 0;
+                var request;
+                // set i to the number of pokemon to render
+                for (var i = 0; i < 600; ++i) {
+                    id = "#" + (i+1);
+                    $("#pokemon").append("<div id = '" + (i+1) + "'> <img src = 'http://pokeapi.co/media/img/" + (i+1) + ".png'/></div>");
+                    attachHandler(id);
+                   
+                }
+            });
+        </script>
+        <style type = "text/css">
+            div{
+                display:inline-block;
+            }
+            
+            #pokedex{
+                width:400px;
+                height:600px;
+                border:10px solid red;
+                display:inline-block;
+                vertical-align:top;
+            }
+            
+            #pokedex img {
+                margin-left:100px;
+            }
+            
+            #pokemon{
+                width:900px;
+                display:inline-block;
+            }
+            
+            
+            .types {
+                width:290px;
+            }
+                .types li{
+                font-size:22px;
+                text-align:center;
+                }
+                
+                
+            .name {
+                font-size:38px;
+                text-align:center;
+            }
+            .height {
+                font-size:24px;
+                text-align:center;
+            }
+            .weight {
+                font-size:24px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <span>
+            <div id = "pokemon">
+            </div>
+            <div id = "pokedex">
+            </div>
+    </body>
+</html>

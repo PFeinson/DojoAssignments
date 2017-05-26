@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function() {
+            $("#image1").click(function() {
+                if ($("#image1").attr("src") == "img/cat0.png") {
+                    $("#image1").attr("src", "img/ninja0.png");
+                } else {
+                    $("#image1").attr("src", "img/cat0.png");
+                }
+            });
+            $("#image2").click(function() {
+                if ($("#image2").attr("src") == "img/cat1.png") {
+                    $("#image2").attr("src", "img/ninja1.png");
+                } else {
+                    $("#image2").attr("src", "img/cat1.png");
+                }
+            });
+            $("#image3").click(function() {
+                if ($("#image3").attr("src") == "img/cat2.png") {
+                    $("#image3").attr("src", "img/ninja2.png");
+                } else {
+                    $("#image3").attr("src", "img/cat2.png");
+                }
+            });
+            $("#image4").click(function() {
+                if ($("#image4").attr("src") == "img/cat3.png") {
+                    $("#image4").attr("src", "img/ninja3.png");
+                } else {
+                    $("#image4").attr("src", "img/cat3.png");
+                }
+            });
+            $("#image5").click(function() {
+                if ($("#image5").attr("src") == "img/cat4.png") {
+                    $("#image5").attr("src", "img/ninja4.png");
+                } else {
+                    $("#image5").attr("src", "img/cat4.png");
+                }
+            });
+    });
+    
+    </script>
+    </head>
+    <body>
+        <p><img src = "img/cat0.png" id = "image1" /></p>
+        <p><img src = "img/cat1.png" id = "image2" /></p>
+        <p><img src = "img/cat2.png" id = "image3" /></p>
+        <p><img src = "img/cat3.png" id = "image4" /></p>
+        <p><img src = "img/cat4.png" id = "image5" /></p>
+    </body>
+</html>
+    

@@ -1,0 +1,122 @@
+
+/* Global */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* IDs for containers */
+#wrapper{
+    width:1024px;
+    height:768px;
+    display:inline-block;
+    background-color:#21375e;
+    border: 25px;
+    border-radius: 25px;
+    padding: 12.5px;
+}
+#header{
+    position: center;
+    width: 974px;
+    height: 75px;
+    background-color:#cd3438;
+    border-radius: 25px;
+    
+}
+
+/* "children" of #primary */
+
+
+#nav{
+    width: 150px;
+    height: 225px;
+    background-color: #2f7c8b;
+    border-radius: 25px;
+    padding:12.5px;
+    margin: 0px;
+    position: relative;
+    top: 15px;
+}
+
+#mainContent {
+    width:726px;
+    height: 523px;
+    background-color:#000;
+    color:#b9cfe9;
+    border-radius:25px;
+    position: relative;
+    left: 200px;
+    bottom: 235px;
+    padding: 25px;
+}
+
+#footer {
+    width: 974px;
+    height: 50px;
+    background-color:#3c4c5b;
+    border-radius:25px;
+    position:relative;
+    bottom: 200px;
+}
+/* Text IDs */
+#headerText {
+    padding: 17.5px;
+    color: #b9cfe9;
+    font-size: 32px;
+    text-align:left;
+}
+
+#bodyHeaderText {
+    color: #b9cfe9;
+    font-size:32px;
+    text-align:left;
+}
+
+#footerText {
+    padding:12.5px;
+    text-align:left;
+    color: #b9cfe9;
+    
+}
+
+/* Text Classes */
+
+.exampleText {
+    color: purple;
+}
+
+
+
+/* NavBar classes */
+.navEntry {
+    text-decoration: underline;
+    color: #5ccbe1;
+    font-size:14px;
+}
+
+.navParent {
+    color: #fff;
+    position: relative;
+    left: 12.5px;
+    font-size: 14px;
+}
+
+.navChild {
+    color: #fff;
+    font-size:14px;
+    position: relative;
+    left: 25px;}
+
+/* Overloads */
+
+
+
+h6{
+    color:purple;
+    font-size:12pt;
+    display:inline-block;
+}
+
+h7{
+    color: #98abce;
+}

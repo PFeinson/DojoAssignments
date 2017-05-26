@@ -1,0 +1,128 @@
+/* StyleSheet for 'TheInternet' Project
+
+/* Globals */
+
+*{
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+/* End Globals */
+
+
+
+/* Page Strucutre */
+
+#primaryContainer {
+    /* Structure */
+    height: 800px;
+    width: 800px;
+    border: 1px solid #000;
+    display:inline-block;
+}
+
+#header {
+    /* Structure */
+    height:60px;
+    width: 800px;
+    border: 1px solid #000;
+    
+    /* Positioning */
+    vertical-align:top;    
+}
+
+
+#theWorldWideWebBanner {
+    /* Structure */
+    height:60px;
+    width:800px;
+    border: 1px solid #000;
+    
+    /* Styling */
+    background: linear-gradient(to bottom, #2989d8 50%,#207cca 51%,#7db9e8 100%);
+    font-size: 48px;
+    color:#fff;
+}
+
+#sideBar {
+    /* Structure */
+    height:675px;
+    width:154px;
+    border: 1px solid #000;
+    padding:25px;
+    
+    
+    /* Positioning */
+    display:inline-block;
+    
+    /* Styling */
+}
+
+#content {
+    /* Structure */
+    height:675px;
+    width:640px;
+    border: 1px solid #000;
+    display:inline-block;
+}
+
+
+/* End Page Structure */
+
+
+
+
+/* Image Properties */
+
+#bannerImage {
+    /* Structure */
+    width:75px;
+    height:75px;
+    display:inline;
+}
+
+
+/* 'TheInternet' banner*/
+#theInter {
+    /* Structure */
+    width: 283px;
+    height: 60px;
+    display:inline;
+    
+    /* Positioning */
+    position:relative;
+    bottom:25px;
+    
+    /* style */
+    font-size:48px;
+    
+}
+
+#net {
+    /* Structure */
+    width:92px;
+    height: 60px;
+    display:inline;
+    
+    /* Positioning */
+    position:relative;
+    bottom:25px;
+    
+    /* style */
+    font-size:48px;
+    color:blue;
+}
+/* end 'theInternet' banner */
+
+
+
+#watchAVideo     {
+        width:130px;
+        height:50px;
+        background-color:blue;
+        border-radius:5px;
+        vertical-align:bottom;
+        color:#fff;
+        font-size:18px;
+}

@@ -1,0 +1,260 @@
+/* belongs to CSSPython */
+
+/* Globals */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container IDs */
+#container {
+    /* container outline */
+    width: 970px;
+    height: 900px;
+    display:inline-block;
+    
+    /* Styling */
+    background-color: #295176;
+}
+
+
+/* Top 3rd of page */
+
+#header { 
+    /* container outline */
+    width: 970px;
+    height: 119px;
+    padding:25px;
+    display:inline-block;
+    /* Styling */
+    
+}
+
+#banner {
+    /* container outline */
+    width: 324px;
+    height: 99px;
+    position: left;
+    display:inline-block;
+    
+    /* Styling */
+}
+
+
+#searchBox {
+    /* container outline */
+    width: 324px;
+    height: 99px;
+    /* Positioning */
+    display:inline-block;
+    margin:30px;
+    position:relative;
+    bottom:50px;
+    left: 300px;
+    /* Styling */
+    color:#fff;
+    text-align:center;
+    font-size:14px;
+}
+
+#searchBar {
+    width:276px;
+    height: 69px;
+    background-color:#464646;
+    border-radius:15px;
+}
+
+#searchField {
+    text-align:center;
+    position:relative;
+    top: 12px;
+    right:15px;
+    width:175px;
+    
+    height:35px;
+}
+
+#goSearch {
+    /* Container Outline */
+    border-radius:5px;
+    width:40px;
+    height:35px;
+    
+    /* Positioning */
+    position:relative;
+    top:12px;
+    
+    /* Style */
+    background-color:#295176;
+    color:#fff; 
+}
+
+#topNav {
+    /* Container outline */
+    height: 30px;
+    width: 900px;
+    border-radius: 5px;
+    
+    /* Styling */
+    display: inline-block;
+    background-color:#467bab;
+    
+    
+    /* Positioning */
+    padding:10px;
+    margin:10px;
+    
+    /* Element properties */
+    
+}
+
+/* Mid content */
+#topContent {
+    /* Container Outline */
+    width:850px;
+    height: 333px;
+    
+    /* Positioning */
+    border-radius:5px;
+    position:inline-block;
+}
+
+#topContent div {
+    position:inline-block;
+}
+
+#sideNav {
+    /* Container Outline */
+    padding:15px;
+    margin:auto;
+    width: 170px;
+    height: 333px;
+    vertical-align:top;
+    font-size:16px;
+    display:inline-block;
+    text-align:center;
+    /* Positioning */
+    
+}
+
+#sideNav a{
+    color:#fff;
+    display:inline-block;
+}
+
+#midContent {
+    /* Container Outline */
+    width: 615px;
+    height: 333px;
+    display:inline-block;
+    text-align:center;
+    color:#fff;
+    padding:15px;
+    /*display:inline-block;*/
+}
+
+#midContent h4{
+    font-size:24px;
+    font-style:italic;
+    color:#ddbe3c;
+}
+
+/* Mid-bottom content */
+#mainContent {
+    /* Container Outline */
+    width: 970px;
+    height: 200px;
+    background-color:#fff;
+    text-align: center;
+    /* Positioning */
+    display:inline-block;
+}
+
+#footer {
+    /* Container Outline */
+    width: 970px;
+    height: 140px;
+    background-color:#336b9e;
+    /* Positioning */
+    
+}
+
+#footerNavBar {
+    width: 970px;
+    height: 70px;
+    background-color:#336b9e;
+}
+
+#copyrightInfo {
+    text-align:center;
+    position:relative;
+    top: 50px;
+    color: #a7c6e3;
+}
+.footerNavButton {
+    margin:25px;
+    margin-top:25px;
+    font-size:24px;
+    text-align:center;
+    display:inline;
+    
+    /* Positioning */
+    position:relative;
+    top:75px;
+    left:50px;
+}
+
+.contentPanel {
+    width: 375px;
+    height: 190px;
+    display:inline-block;
+    background-color:#fff;
+    margin:10px;
+}
+/* Navbar classes */
+.topNavButton {
+    /* Container outline */
+    /*width: 131.66px;*/
+    margin:25px;
+    margin-top:0px;
+    font-size:24px;
+    /* Styling */
+    text-align:center;
+    display: inline-block;
+}
+
+.topNavButton a {
+    color: #fff;
+    text-decoration:none;
+}
+
+
+.topLine {
+    height:5px;
+    width:380px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#000;
+    background-color:#295176;
+}
+/* Style classes */
+
+
+/* Overloads */
+a {
+    color: #7e8136;
+}
+
+
+.contentPanel a{
+    color:#a7c6e3;
+    text-decoration:none;
+}
+
+
+
+
+.footerNavButton a{
+    color:#a7c6e3;
+    text-decoration:none;
+}

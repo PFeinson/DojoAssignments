@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8" />
+        <title></title>
+        <!-- CSS to reference during addClass, etc -->
+        <style type = "text/css">
+            .classAdd {
+                color:#ccc;
+            }
+        </style>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type = "text/javascript"> 
+            $(document).ready(function() {
+                $("#clickDemo").click(function() {
+                    alert("Clicked!");
+                });
+                $("#hideDemo").click(function() {
+                    $( "#disposable ").hide( );
+                });
+                $("#showDemo").click(function() {
+                    $( "#disposable").show();
+                });
+                $("#toggleDemo").click(function() {
+                    $( "p").toggle();
+                });
+                $("#slideDownDemo").click(function() {
+                    if ( $( "#slideable" ).is( ":hidden" ) ) {
+                        $( "#slideable" ).slideDown( "slow" );
+                    } else {
+                        $( "#slideable" ).hide();
+                    }
+                });
+                $("#slideUpDemo").click(function() {
+                    if ( $( "#slideable2" ).is( ":hidden") ) {
+                       $ ( "#slideable2" ).show ( "slow" );
+                    } else {
+                        $ ( "#slideable2").slideUp();
+                    }
+                });
+                $("#slideToggleDemo").click(function() {
+                    $("#slideToggleable").slideToggle("slow");
+                });
+                $("#fadeInDemo").click(function() {
+                    if ( $( "#fadeInH3" ).is (":hidden" ) ) {
+                        $( "#fadeInH3" ).fadeIn("slow");
+                    } else {
+                        $ ("#fadeInH3").hide();
+                    }
+                });
+                $("#fadeOutDemo").click(function() {
+                    if ( $( "#fadeOutH3" ).is( ":hidden") ) {
+                        $("#fadeOutH3").show();
+                    } else {
+                        $ ("#fadeOutH3").fadeOut();
+                    }
+                });
+                $("#addClassDemo").click(function() {
+                    $("#addClassDemo").addClass("classAdd");
+                });
+                $("#beforeDemo").click(function() {
+                    $("#beforeDemo").before( document.createTextNode("Peace!"));
+                });
+                $("#afterDemo").click(function() {
+                    $("#afterDemo").after( document.createTextNode("Hello!"));
+                });
+                $("#appendDemo").click(function() {
+                    $("#appendAttribute").append(document.createTextNode("TEST"));
+                });
+                $("#htmlDemoBtn").click(function() {
+                    $("#htmlDemo").html("<b>Test</b>");
+                });
+                $("#attrDemo").click(function() {
+                    $("#attrTest").attr("font-weight", "bold");
+                });
+                $("#valDemo").click(function() {
+                    var value = $("#valDemo").val();
+                    alert(value);
+                });
+                $("#textDemo").click(function() {
+                    $("#textH3").text("Some stuff!");
+                });
+                $("#dataDemo").click(function() {
+                    $("#dataH3").data( "foo", "foobar");
+                    alert ($("#dataH3").data("foo"));
+                });
+            })
+        </script>
+        </head>
+        <body>
+        <span>
+            <input type = "submit" value = "clickDemo" id = "clickDemo" />
+            <h3>Click Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "hideDemo" id = "hideDemo" />
+            <p id = "disposable">Hide Demo</p>
+        </span>
+        <span>
+            <input type = "submit" value = "showDemo" id = "showDemo" />
+        </span>
+        <span>
+            <input type = "submit" value = "toggleDemo" id = "toggleDemo" />
+            <p>Toggle Demo</p>
+        </span>
+        <span>
+            <input type = "submit" value = "slideDownDemo" id = "slideDownDemo" />
+            <h3 id = "slideable">Slide Down Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "slideUpDemo" id = "slideUpDemo" />
+            <h3 id = "slideable2">Slide Up Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "slideToggleDemo" id = "slideToggleDemo" />
+            <h3 id = "slideToggleable">Slide Toggle Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "fadeInDemo" id = "fadeInDemo" />
+            <h3 id = "fadeInH3">Fade In Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "fadeOutDemo" id = "fadeOutDemo" />
+            <h3 id = "fadeOutH3">Fade Out Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "addClassDemo" id = "addClassDemo" />
+            <h3>Add Class Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "beforeDemo" id = "beforeDemo" />
+            <h3>Before Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "afterDemo" id = "afterDemo" />
+            <h3>After Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "appendDemo" id = "appendDemo" />
+            <h3 id = "appendAttribute">Append Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "htmlDemoBtn" id = "htmlDemoBtn" />
+            <div id = "htmlDemo">HTML Demo</div>
+        </span>
+        <span>
+            <input type = "submit" value = "attrDemo" id = "attrDemo" />
+            <p id = "attrTest">Attr Demo</p>
+        </span>
+        <span>
+            <input type = "submit" value = "valDemo" id = "valDemo" />
+            <h3 id = "retrieveVal">Val Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "textDemo" id = "textDemo" />
+            <h3 id = "textH3">Text Demo</h3>
+        </span>
+        <span>
+            <input type = "submit" value = "dataDemo" id = "dataDemo" />
+            <h3 id = "dataH3">Data Demo</h3>
+        </span>
+        
+        
+        
+    </body>
+</html>
